@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate & Weather Info System</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Weather Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="weather-card">
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name..." spellcheck="false">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <!-- Error Message -->
+        <div class="error" id="error-msg">
+            <p>Invalid City Name. Please try again.</p>
+        </div>
+
+        <!-- Weather Display Section -->
+        <div class="weather-data" id="weather-display">
+            <div class="weather-icon-container">
+                <img src="" alt="Weather Icon" id="weather-icon">
+            </div>
+            <h1 class="temp" id="temperature">--°C</h1>
+            <h2 class="city" id="city-name">City Name</h2>
+
+            <!-- Extra Details -->
+            <div class="details">
+                <div class="col">
+                    <i class="fa-solid fa-water"></i>
+                    <div>
+                        <p class="humidity" id="humidity-val">--%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <p class="wind" id="wind-val">-- km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
